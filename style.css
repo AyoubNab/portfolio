@@ -1,0 +1,133 @@
+*{
+    cursor: none;
+}
+body {
+    background: rgb(3,15,14);
+    background: linear-gradient(265deg, rgba(3,15,14,1) 0%, rgba(9,38,42,1) 100%);
+}
+
+#cursor {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s, opacity 0.2s;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+}
+
+#titre{
+    color: aliceblue;
+    font-family: 'Chakra Petch', sans-serif;
+    padding-left: 60px;
+}
+
+.effect{
+    color: #00b7ff;
+    text-shadow: 0 0 10px #25a2f5;
+}
+.projects {
+    display: flex;
+    justify-content: space-around;
+}
+
+.texte{
+    font-family: 'Chakra Petch', sans-serif;
+    color: whitesmoke;
+}
+
+.project {
+    width: 30%; /* Ajustez cette valeur en fonction de vos besoins */
+}
+.effect2{
+    color: #33ff00;
+    text-shadow: 0 0 10px #25f541;
+}
+
+
+.languages{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.progress-bar {
+    position: relative;
+    width: 40%;
+    background: linear-gradient(200deg, rgba(16, 167, 154, 0.363) 3%, rgba(9, 38, 42, 1) 100%);
+    border-radius: 111px;
+    padding: 4px;
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.616); /* Ajoute un contour blanc en haut */
+}
+
+.progress {
+    background-color: #25a2f5;
+    height: 14px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00b7ff, 0 0 5px #1100ff;
+}
+
+#competences,#project {
+    color: aliceblue;
+    font-family: 'Chakra Petch', sans-serif;
+    padding-left: 45px;
+}
+
+
+#comp2,#comp1 {
+    color: #25a2f5;
+    font-size: 20px;
+    font-family: 'Pixelify Sans', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+#comp1, #comp2, #comp3 {
+    transition: all 0.3s ease;
+}
+
+#comp1:hover, #comp2:hover, #comp3:hover {
+    transform: scale(1.1); /* Zoom */
+    filter: blur(0px); /* Flou */
+}
+.project:hover{
+    transform: scale(1.2px);
+}
+#w1, #w2, #w3 {
+    transition: filter 0.3s;
+}
+
+#comp1:not(:hover), #comp2:not(:hover), #comp3:not(:hover) {
+    filter: blur(2px); 
+}
+
+
+.footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+}
+.footer a:hover {
+    color: #ddd;
+}
+@keyframes hover {
+    0% {color: white;}
+    50% {color: #ddd;}
+    100% {color: white;}
+}
+.footer a:hover {
+    animation: hover 1s infinite;
+    transform: scale(1.1px);
+}
+
+.rsociaux{
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+#image{
+    padding: auto;
+}
+
